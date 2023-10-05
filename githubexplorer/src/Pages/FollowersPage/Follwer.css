@@ -1,0 +1,19 @@
+.follower-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px; /* Add some gap between grid items for better spacing */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .follower-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive layout for even smaller screens */
+@media (max-width: 480px) {
+    .follower-container {
+        grid-template-columns: 1fr; /* Display one column for very small screens */
+    }
+}

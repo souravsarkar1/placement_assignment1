@@ -1,0 +1,85 @@
+.manindiv {
+    padding: 25px;
+    margin: 5px auto 5px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 800px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.fistDiv img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.Link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.secondDiv,
+.thirdDiv {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.secondDiv p,
+.thirdDiv p {
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+.thirdDiv {
+    border-left: 1px solid #ced3aa;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.thirdDiv a {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* .manindiv:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+} */
+@media (max-width: 767px) {
+    .manindiv {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        width: auto;
+    }
+
+    .fistDiv img {
+        margin-bottom: 0;
+    }
+
+    .thirdDiv {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Media Query for Tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .manindiv{
+       display: flex;
+       flex-direction: column;
+    }
+}
